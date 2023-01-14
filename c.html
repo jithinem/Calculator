@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./c.css">
+</head>
+<body class="bg-primary">
+    <center>
+    <div class="large bg-info">
+        <div class="head"><h1>CALCULATOR</h1></div>
+        <div class="r1" id="dis">
+            <input type="text" id="result" placeholder="Enter" class="form-control">
+        </div>
+        <div class="r1">
+            <button class="r11 nd" id="c" onclick="clearBox()">C</button>
+            <button class="r11 nd" id="div" onclick="displayNum('/')">&#247;</button>
+            <button class="r11 nd" id="mul" onclick="displayNum('*')">&#215;</button>
+            <button class="r11 nd" id="del" onclick="removeLast()">&larr;</button>
+        </div>
+        <div class="r1">
+            <button class="r11" id="seven" onclick="displayNum('7')">7</button>
+            <button class="r11" id="eight" onclick="displayNum('8')">8</button>
+            <button class="r11" id="nine" onclick="displayNum('9')">9</button>
+            <button class="r11 nd" id="sub" onclick="displayNum('-')">&#8722;</button>
+
+        </div>
+        <div class="r1">
+            <button class="r11" onclick="displayNum('4')">4</button>
+            <button class="r11" onclick="displayNum('5')">5</button>
+            <button class="r11" onclick="displayNum('6')">6</button>
+            <button class="r11 nd" id="add" onclick="displayNum('+')">&#43;</button>
+
+        </div>
+        <div class="r1">
+            <button class="r11" onclick="displayNum('1')">1</button>
+            <button class="r11" onclick="displayNum('2')">2</button>
+            <button class="r11" onclick="displayNum('3')">3</button>
+            <button class="r11 nd" onclick="displayNum('.')">.</button>
+
+        </div>
+        <div class="r1">
+            <button class="r11" onclick="displayNum('0')">0</button>
+            <button class="r11" id="open" onclick="displayNum('&#40;')">&#40;</button>
+            <button class="r11" id="close" onclick="displayNum('&#41;')">&#41;</button>
+            <button class="r11  nd" id="equal" onclick="evaluateExpression()">&#61;</button>
+        </div>
+    </div>
+</center>
+</body>
+
+<script src="./c.js"></script>
+</html>
